@@ -1,0 +1,12 @@
+<div class="card bg-light text-dark col-3">
+    <div class="card-header">
+        <h5 class="card-title"><%=product.title%></h5>
+        <p class="card-text"><%=product.description %></p>
+    </div>
+    <div class="card-body">
+        <img class="card-img" src="<%=product.image%>?anticache=<%=Math.random().toString(16)%>"  alt="<%=product.title%>" >
+    </div>
+    <div class="card-footer">
+        Price: $<%= product.price.toFixed(2)%> <a href="#" data-product-sku="<%=product.sku%>" class="btn btn-primary">Add To Cart</a>
+    </div>
+</div>
